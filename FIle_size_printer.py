@@ -32,7 +32,9 @@ def disk_usage(dir_path, size_list):
         
     return size_list
 
-sizes = disk_usage(path, [])
-sizes = [int(s) for s in sizes]
-sizes.sort(reverse = True)
-print(sizes)
+
+if __name__ == '__main__':
+    sizes = disk_usage(path, [])
+    sizes = [int(s) for s in sizes]
+    sizes.sort(reverse = True)
+    print(sizes)
